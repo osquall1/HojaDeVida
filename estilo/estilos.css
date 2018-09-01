@@ -15,12 +15,12 @@
 .pie{ font-size: 20px; clear:both; text-align:center;padding:0px;
      background:rgba(45, 189, 218);border: 3px solid #006666; margin: 5px;} 
 .imagenprincipal{ margin: 0px  ;border: 8px  ridge #0D7191;
-                  background-color:#E5E8E8; width:auto; height:auto;
+                  background-color:#C7CFE7; width:auto; height:auto;
                    }
                  
 .art{float: right;  margin:15px; padding: 15px;
   font-size: 20px; 
-  background-color: #C7CFE7;
+  background-color: #F0F8ED;
   box-shadow: #000000 10px 10px 15px; border-radius: 10px; 
   -webkit-box-shadow: #000000 10px 10px 15px;
   -moz-box-shadow: #000000 10px 10px 15px; 
@@ -47,13 +47,10 @@ ul.section_navigation>li {
    font-size:20px;
 }
 #navegador li a {
-   
-   color: #666;
-   background-color: #C8E1DF;
+    
    border: 1px solid #ccc;
    text-decoration: none;
 }
 #navegador li a:hover{
-   background-color: #333333;
-   color: #ffffff;
+   
 }
