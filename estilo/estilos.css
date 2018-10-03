@@ -55,3 +55,17 @@ ul.section_navigation>li {
    
 }
 
+.es, .en { display: none; }
+
+.es:lang(es) {
+ display: initial;
+  
+}
+
+.en:lang(en) {
+  display: initial;
+  
+}
+
+
+

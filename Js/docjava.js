@@ -1,6 +1,6 @@
 $(function(){
 
-    var texto = "Hoja de Vida";
+    var texto = "Curriculum Vitae";
     maquina("typer",texto,200);
 
 });

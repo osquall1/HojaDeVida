@@ -25,31 +25,43 @@ and open the template in the editor.
                      
 <body class="cuerpo"> 
     
+    
   
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-   
-        
-        <br><center>
+        <button data-lang="es" ><img src="estilo/spa.png" width="40" height="25" alt="" ></button>
+        <button data-lang="en" ><img src="estilo/eng.png" width="40" height="25" alt=""></button>
+        <br></br>      
+        <center>
       <nav id="navegador"><!--barra de navegacion-->
       <ul>      
-                  <li><a href="#info" >
-              <button type="button">Datos de contacto</button>
-              </a></li> 
+             <li><a href="#info" >
+                     <button type="button"><b class="es">Datos de contacto</b> <b class="en">Contact information</b> </button>
+             </a></li> 
       <li><a href="#perfil">
-              <button type="button">Pefil</button>
+              <button type="button"><b class="es"> Pefil</b> <b class="en"> Profile</b></button> 
               </a></li>
       <li><a href="#experiencia"> 
-              <button type="button">Experiencia laboral</button>
-              </a></li>
+              <button type="button"><b class="es">Experiencia laboral</b> <b class="en">Work experience</b></button>
+              </a></li> 
                   <li><a href="#estudios">
-               <button type="button">Estudios</button>                         
+               <button type="button"><b class="es">Estudios</b> <b class="en">Estudies</b></button>                         
               </a></li>
       <li><a href="https://codepen.io/osquall/">   
-               <button type="button">Portafolio/Proyectos </button>
+              <button type="button"><b class="es">Portafolio/Proyectos</b> <b class="en">Projects/Portfolio</b></button>
                </a></li>
       </ul>
       </nav>
             <h1 id="typer"></h1>
+            <script>
+                $('button').on('click', function(){
+                 
+                var lang = $(this).data('lang'); 
+    
+                 $('html').prop('lang', lang);
+    
+                 });
+            </script>
+         
         </center><br> 
     
         <div class="imagenprincipal">
@@ -61,42 +73,55 @@ and open the template in the editor.
     <section class="seccion">
        <article class="art">
            <h2 id="info">OSCAR JAVIER MANRIQUE ZAMUDIO</h2>
-           <p>DIRECCIÓN RESIDENCIA: CALLE 6ª N0 88 – 51 INT 23 APTO 404 TÍNTALA      TELÉFONOS: 7404503– CELULAR 3118048458-3194158400  Email: oscarmanqzamu@hotmail.com </p>
-                 
+           <p class="es">DIRECCIÓN RESIDENCIA: CALLE 6ª No 88 – 51 INT 23 APTO 404 TÍNTALA      TELÉFONOS: 7404503– CELULAR 3118048458-3194158400  Email: oscarmanqzamu@hotmail.com </p>
+           <p class="en">RESIDENCE ADDRESS: 6TH STREET No 88 - 51 INT 23 SUITABLE 404 TÍNTALA TELEPHONE: 7404503- CELLULAR 3118048458-3194158400 Email: oscarmanqzamu@hotmail.com </p>      
              
         </article>
   
-        <article class="art"><h2 id="perfil">Perfil</h2>
+        <article class="art"><h2 id="perfil"><b class="es">Perfil</b><b class="en">Profile</b></h2>
         
-         <p>Técnologo  en análisis y Desarrollo  del SENA, con amplia experiencia en asesoría y atención al cliente, soporte remoto mantenimiento preventivo y  correctivo de equipos de cómputo e impresoras, instalación de sistemas operativos,  actualizaciones de software, backups, apoyo ofimático y reporte de incidentes,  manejo de redes. Programación en base de datos en mysql , lenguaje php, java8,JPA, patrones DAO Facade, web html y css básico. Con capacidad de aprendizaje, análisis, actitud de servicio, trabajo en equipo  orientado  hacia el resultado </p>
-           <mark><a href="https://codepen.io/osquall/">Ver Portafolio</a></mark>
+            <p class="es">Técnologo  en análisis y Desarrollo  del SENA, con amplia experiencia en asesoría y atención al cliente, soporte remoto mantenimiento preventivo y  correctivo de equipos de cómputo e impresoras, instalación de sistemas operativos,  actualizaciones de software, backups, apoyo ofimático y reporte de incidentes,  manejo de redes. Programación en base de datos en mysql , lenguaje php, java8,JPA, patrones DAO Facade, web html y css básico. Con capacidad de aprendizaje, análisis, actitud de servicio, trabajo en equipo  orientado  hacia el resultado </p>
+            <p class="en">Technologist in analysis and development of SENA, with extensive experience in advising and customer service, remote support, preventive and corrective maintenance of computer equipment and printers, installation of operating systems, software updates, backups, office support and incident reporting, management of networks. Database programming in mysql, php language, java8, JPA, DAO Facade patterns, web html and basic css. With capacity for learning, analysis, attitude of service, teamwork oriented towards the result</p>
+            <mark><a href="https://codepen.io/osquall/"><b class="es">Ver Portafolio</b> <b class="en">See portfolio</b>   </a></mark>
                  
              
          </article>
   <!--Cuadro de articulo izquie-->
-         <article class="art"><h2 id="experiencia">Experiencia Laboral</h2>
+         <article class="art" id="experiencia"><h2 class="es">Experiencia Laboral</h2><h2 class="en">Work experience</h2>
              <br>
              <h3>Software Builders</h3>          
-          <p>Practicante Java   Febrero de 2018 Agosto de 2018</p>
-          <p> Logros        • Ayude a desarrollar  un proyecto web  en java basado en Server Faces  el cual me dio el conocimiento y experiencia para el desarrollo de aplicaciones basado en JSF • Actualice la plataforma web del proyecto Colciencias para que se mas efectivo al momento de generar consulta </p>
-            <br>
+             <p class="es">Practicante Java   Febrero de 2018 Agosto de 2018</p> <p class="en">Java Practitioner February 2018 August 2018</p>
+             <p class="es"> Logros        • Ayude a desarrollar  un proyecto web  en java basado en Server Faces  el cual me dio el conocimiento y experiencia para el desarrollo de aplicaciones basado en JSF • Actualice la plataforma web del proyecto Colciencias para que se mas efectivo al momento de generar consulta </p>
+             <p class="en">
+Achievements • Help develop a web project in java based on Server Faces which gave me the knowledge and experience for the development of applications based on JSF • Update the web platform of the Colciencias project to be more effective when generating query </p>
+             <br>
            <h3>ARUS SA</h3>
-           <p>Técnico de soporte sitio     Diciembre de 2016 Julio de 2017</p>
-           <p>Soporte en sitio en  la herramienta de gestión de incidencias con la herramienta máximo de IBM para cumplir las solicitudes e incidencias del usuario final de acuerdo a las metas que se disponía la empresa</p>
-           <p> Logros  • Genere confianza con el cliente  dando un buen trato al usuario final       • Genere nuevas ideas y ayude a dar soluciones óptimas para la prestación del soporte en sitio dando resultados asertivos       •Mantuve los indicadores que solicita la compañía atravez de buenas prácticas de Itil  </p>
-            <br> 
-           <h3>SONDA DE COLOMBIA</h3>  
-           <p>Técnico de soporte 1   Diciembre de 2011 Febrero de 2016</p>
-           <p>Soporte técnico de mesa de ayuda el cual se realizó desde la herramienta de gestión de incidencias hp service manager para cumplir los requerimientos del usuario final de acuerdo a las metas que se disponía la empresa</p>
-           <p>  Logros • Capacite personal nuevo        •Mejore las prácticas de la mesa de ayuda en métodos para la solución de fallas aportando ideas         •Mantuve los indicadores que solicita la empresa brindando un buen servicio a los usuarios de acuerdo a las políticas de la compañía.</p>
-       </article>
-  <article class="art"><h2 id="estudios">FORMACIÓN  ACADÉMICA</h2>
-        
-         <p> TECNÓLOGO  EN ANÁLISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN (SENA) </p>
-         <p>TÉCNICO  EN SISTEMAS   Servicio Nacional de aprendizaje (SENA)  </p>
-         <p>BACHILLER ACADÉMICO    (Instituto Pedagógico Santander) </p>
-             
+           <p class="es">Técnico de soporte sitio     Diciembre de 2016 Julio de 2017</p><p class="en">Support technician on site December 2016 July 2017</p>
+           <p class="es">Soporte en sitio en  la herramienta de gestión de incidencias con la herramienta máximo de IBM para cumplir las solicitudes e incidencias del usuario final de acuerdo a las metas que se disponía la empresa</p>
+           <p class="en">On-site support in the incident management tool with the maximum IBM tool to meet the requests and incidents of the end user according to the goals that the company had available</p>
+           <p class="es"> Logros  • Genere confianza con el cliente  dando un buen trato al usuario final       • Genere nuevas ideas y ayude a dar soluciones óptimas para la prestación del soporte en sitio dando resultados asertivos       •Mantuve los indicadores que solicita la compañía atravez de buenas prácticas de Itil  </p>
+           <p class="en">
+Achievements • Build trust with the client by giving a good deal to the end user • Generate new ideas and help to provide optimal solutions for the provision of on-site support giving assertive results • Maintained the indicators requested by the company through good practices of Itil<p> 
+           <br> 
+           <h3>SONDA S.A</h3>  
+           <p class="es">Técnico de soporte 1   Diciembre de 2011 Febrero de 2016</p><p class="en">Support technician 1 December 2011 February 2016</p>
+           <p class="es">Soporte técnico de mesa de ayuda el cual se realizó desde la herramienta de gestión de incidencias hp service manager para cumplir los requerimientos del usuario final de acuerdo a las metas que se disponía la empresa</p>
+           <p class="en">Technical help desk support which was made from the hp service manager incident management tool to meet the requirements of the end user according to the goals that the company had available</p>
+           <p class="es">Logros • Capacite personal nuevo        •Mejore las prácticas de la mesa de ayuda en métodos para la solución de fallas aportando ideas         •Mantuve los indicadores que solicita la empresa brindando un buen servicio a los usuarios de acuerdo a las políticas de la compañía.</p>
+           <p class="en">Achievements • Train new staff • Improve the practices of the help desk in methods for solving problems contributing ideas • Maintained the indicators requested by the company providing a good service to users according to company policies. </p>
          </article>
+  <article class="art"><h2 id="estudios"> <b class="es">FORMACIÓN  ACADÉMICA</b><b class="en">ACADEMIC TRAINING</b></h2>
+        
+         <p class="es"> TECNÓLOGO  EN ANÁLISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN (SENA) </p>
+         <p class="en">TECHNOLOGIST IN ANALYSIS AND DEVELOPMENT OF INFORMATION SYSTEMS (SENA)<p>
+            
+         <p class="es">TÉCNICO  EN SISTEMAS (SENA)  </p>
+         <p class="en">SYSTEM TECHNIQUE (SENA)</p>
+         <br>
+         <p class="es">BACHILLER ACADÉMICO (Instituto Pedagógico Santander)</p>
+         <p class="en">HIGH SCHOOL (Instituto Pedagógico Santander)</p>
+             
+    </article>
  
     </section>
 
